@@ -1,30 +1,28 @@
 {
   "name": "rxjs-snippets",
   "displayName": "rxjs-snippets",
-  "description": "Generate Reactivex rxjs code snippets for typescript/javascript.",
-  "version": "0.0.2",
-  "publisher": "pkosta2006",
+  "description": "RxJS snippets for vscode",
+  "version": "0.0.3",
+  "publisher": "alan-vivona",
   "icon": "images/rxjs_icon.png",
   "license": "SEE LICENSE IN LICENSE.md",
 	"bugs": {
-		"url": "https://github.com/prashantkoshta/rxjs-snippets-vscode.git/issues",
-		"email": "pkosta2005@outlook.com"
+		"url": "https://github.com/alanvivona/rxjs-snippets-vscode.git/issues",
+		"email": "alan.g.vivona@gmail.com"
 	},
-	"homepage": "https://github.com/prashantkoshta/rxjs-snippets-vscode.git/blob/master/README.md",
+	"homepage": "https://github.com/alanvivona/rxjs-snippets-vscode/blob/master/README.md",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/prashantkoshta/rxjs-snippets-vscode.git"
+		"url": "https://github.com/alanvivona/rxjs-snippets-vscode.git"
 	},
 	"categories": [
 		"Snippets"
 	],
-  "scripts": {
-    
-  },
   "engines": {
     "vscode": "^1.0.0"
   },
   "keywords": [
+    "rx",
     "RxJs",
     "rxjs",
     "snippets",
