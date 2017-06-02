@@ -1,13 +1,13 @@
 # rxjs-snippets
 
-Provide feature for developer to generate code snippets of rxjs.
+Provides snippets for RxJS.
 
 ## Requirements
-
-- npm install -g rxjs
 
 ## Release Notes
 
 This release include ReactiveX rxjs code snippets.
+
+- Added a bunch of new snippets to the original pluggin
 
 **Enjoy!**
