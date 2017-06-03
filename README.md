@@ -19,5 +19,6 @@ Snippets added so far:
 ### For more information
 
 * [Github](https://github.com/alanvivona/rxjs-snippets-vscode)
+* [vscode marketplace](https://marketplace.visualstudio.com/items?itemName=alan-vivona.rxjssnippets)
 
 **Enjoy!**
