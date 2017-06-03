@@ -1,13 +1,9 @@
-# rxjs-snippets
+# rxjs-snippets README
 
 RxJS snippets for vscode
 
-## Requirements
+### For more information
 
-## Release Notes
-
-This release include ReactiveX rxjs code snippets.
-
-- Added a bunch of new snippets to the original pluggin made by prashantkoshta (https://github.com/prashantkoshta)
+* [Github](https://github.com/alanvivona/rxjs-snippets-vscode)
 
 **Enjoy!**

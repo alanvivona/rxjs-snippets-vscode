@@ -1,4 +1,4 @@
-MIT License
+MIT License Alan Vivona
 
 Copyright (c) 2017
 

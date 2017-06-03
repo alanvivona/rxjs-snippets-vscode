@@ -1,6 +1,6 @@
 {
-  "name": "rxjs-snippets",
-  "displayName": "rxjs-snippets",
+  "name": "rxjs-snippets2",
+  "displayName": "rxjs-snippets2",
   "description": "RxJS snippets for vscode",
   "version": "0.0.3",
   "publisher": "alan-vivona",
@@ -32,7 +32,7 @@
     "snippets": [
       {
         "language": "javascript",
-        "path": "src/javascript.json"
+        "path": "snippets/snippets.json"
       }
     ]
   },
