@@ -1,5 +1,4 @@
 {
-	
 	"rxjs.Observable.from.map.filter": {
 		"prefix": "Rx.Observable.from",
 		"description": "Creates an Observable from an Array, an array-like object, a Promise, an iterable object, or an Observable-like object.",
@@ -40,6 +39,69 @@
 			"\te => { console.log(${6:e}) },",
 			"\t() => { console.log('complete') }",
 			");"
+		]
+	},
+	"rxjs.Observable.fromEventPattern": {
+		"prefix": "Rx.Observable.fromEventPattern",
+		"description": "Creates a new Observable linked to a custom event using event handlers.",
+		"body": [
+			"Observable.fromEventPattern(${1:addHandlerFn},${2:delHandlerFn})",
+			".map(v => ${3:v})",
+			".filter(v => ${4:true})",
+			".subscribe(",
+			"\tv => { console.log(${5:v}) },",
+			"\te => { console.log(${6:e}) },",
+			"\t() => { console.log('complete') }",
+			");"
+		]
+	},
+	"rxjs.Observable.fromCallback": {
+		"prefix": "Rx.Observable.fromCallback",
+		"description": "Creates a new Observable from a callback function.",
+		"body": [
+			"Observable.fromCallback(${1:callbackFn})",
+			".map(v => ${3:v})",
+			".filter(v => ${4:true})",
+			".subscribe(",
+			"\tv => { console.log(${5:v}) },",
+			"\te => { console.log(${6:e}) },",
+			"\t() => { console.log('complete') }",
+			");"
+		]
+	},
+	"rxjs.Observable.fromNodeCallback": {
+		"prefix": "Rx.Observable.fromNodeCallback",
+		"description": "Creates a new Observable from a node callback function.",
+		"body": [
+			"Observable.fromNodeCallback(${1:nodeCallbackFn})",
+			".map(v => ${3:v})",
+			".filter(v => ${4:true})",
+			".subscribe(",
+			"\tv => { console.log(${5:v}) },",
+			"\te => { console.log(${6:e}) },",
+			"\t() => { console.log('complete') }",
+			");"
+		]
+	},
+	"rxjs.Observable.prototype.toCallback": {
+		"prefix": "Rx.Observable.prototype.toCallback",
+		"description": "Implements a function to convert observables to callbacks.",
+		"body": [
+			"Rx.Observable.prototype.toCallback = function (cb) {",
+			"\tvar source = this",
+			"\treturn function () {",
+			"\t\tlet val, hasVal = false",
+			"\t\tsource.subscribe(",
+			"\t\t\tv => {",
+			"\t\t\t\thasVal = true",
+			"\t\t\t\tval = v",
+			"\t\t\t\tconsole.log(${5:v})",
+			"\t\t\t},",
+			"\t\t\te => { console.log(${6:e}) },",
+			"\t\t\t() => { console.log('complete') }",
+			"\t\t)",
+			"\t}",
+			"}"
 		]
 	},
 	"rxjs.Observable.create": {

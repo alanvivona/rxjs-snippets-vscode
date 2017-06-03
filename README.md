@@ -9,12 +9,16 @@ Snippets added so far:
 - rxjs.Observable.from.map.filter
 - rxjs.Observable.of
 - rxjs.Observable.fromEvent
+- rxjs.Observable.fromEventPattern
+- rxjs.Observable.fromCallback
+- rxjs.Observable.fromNodeCallback
 - rxjs.Observable.create
 - rxjs.Observable.empty 
 - rxjs.Observable.fromPromise
 - rxjs.Observable.interval
 - rxjs.Observable.range
 - rxjs.Observable.timer
+- rxjs.Observable.prototype.toCallback
 
 ### For more information
 
