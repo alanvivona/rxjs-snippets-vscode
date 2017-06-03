@@ -1,42 +1,42 @@
 {
-  "name": "rxjs-snippets2",
-  "displayName": "rxjs-snippets2",
-  "description": "RxJS snippets for vscode",
-  "version": "0.0.3",
-  "publisher": "alan-vivona",
-  "icon": "images/rxjs_icon.png",
-  "license": "SEE LICENSE IN LICENSE.md",
-	"bugs": {
-		"url": "https://github.com/alanvivona/rxjs-snippets-vscode.git/issues",
-		"email": "alan.g.vivona@gmail.com"
-	},
-	"homepage": "https://github.com/alanvivona/rxjs-snippets-vscode/blob/master/README.md",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/alanvivona/rxjs-snippets-vscode.git"
-	},
-	"categories": [
-		"Snippets"
-	],
-  "engines": {
-    "vscode": "^1.0.0"
-  },
-  "keywords": [
-    "RxJs",
-    "rxjs",
-    "snippets",
-    "ReactiveX",
-    "Reactivex"
-  ],
-  "contributes": {
-    "snippets": [
-      {
-        "language": "javascript",
-        "path": "snippets/snippets.json"
-      }
-    ]
-  },
-  "devDependencies": {
-    "vscode": "^1.0.0"
-  }
+    "name": "rxjssnippets",
+    "displayName": "rxjs snippets",
+    "description": "RxJS snippets for vscode",
+    "version": "0.2.0",
+    "publisher": "alan-vivona",
+    "icon": "images/rxjs_icon.png",
+    "license": "SEE LICENSE IN LICENSE.md",
+    "bugs": {
+        "url": "https://github.com/alanvivona/rxjs-snippets-vscode.git/issues",
+        "email": "alan.g.vivona@gmail.com"
+    },
+    "homepage": "https://github.com/alanvivona/rxjs-snippets-vscode/blob/master/README.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/alanvivona/rxjs-snippets-vscode.git"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "keywords": [
+        "RxJs",
+        "rxjs",
+        "snippets",
+        "ReactiveX",
+        "Reactivex"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "snippets/snippets.json"
+            }
+        ]
+    },
+    "devDependencies": {
+        "vscode": "^1.0.0"
+    }
 }
