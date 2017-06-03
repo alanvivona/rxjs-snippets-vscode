@@ -22,11 +22,11 @@
         "vscode": "^1.0.0"
     },
     "keywords": [
-        "RxJs",
+        "rx",
         "rxjs",
-        "snippets",
-        "ReactiveX",
-        "Reactivex"
+        "reactivex",
+        "reactive",
+        "snippets"
     ],
     "contributes": {
         "snippets": [

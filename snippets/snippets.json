@@ -1,8 +1,8 @@
 {
 	
 	"rxjs.Observable.from.map.filter": {
-		"prefix": "obs.from",
-		"description": "from(ish: ObservableInput<T>, scheduler: Scheduler): Observable<T>\nCreates an Observable from an Array, an array-like object, a Promise, an iterable object, or an Observable-like object.",
+		"prefix": "Rx.Observable.from",
+		"description": "Creates an Observable from an Array, an array-like object, a Promise, an iterable object, or an Observable-like object.",
 		"body": [
 			"Observable.from(${1:object})",
 			".map(v => ${2:v})",
@@ -15,8 +15,8 @@
 		]
 	},
 	"rxjs.Observable.of": {
-		"prefix": "obs.of",
-		"description": "of(values: ...T, scheduler: Scheduler): Observable<T>\nCreates an Observable that emits some values you specify as arguments, immediately one after the other, and then emits a complete notification.",
+		"prefix": "Rx.Observable.of",
+		"description": "Creates an Observable that emits some values you specify as arguments, immediately one after the other, and then emits a complete notification.",
 		"body": [
 			"Observable.of(${1:object})",
 			".map(v => ${2:v})",
@@ -29,8 +29,8 @@
 		]
 	},
 	"rxjs.Observable.fromEvent": {
-		"prefix": "obs.fromEvent",
-		"description": "fromEvent(target: EventTargetLike, eventName: string, options: EventListenerOptions, selector: SelectorMethodSignature<T>): Observable<T> \nCreates an Observable that emits events of a specific type coming from the given event target.",
+		"prefix": "Rx.Observable.fromEvent",
+		"description": "Creates a new Observable that will execute the specified function when a Subscriber subscribes to it.",
 		"body": [
 			"Observable.fromEvent(${1:target},${2:eventName})",
 			".map(v => ${3:v})",
@@ -43,7 +43,7 @@
 		]
 	},
 	"rxjs.Observable.create": {
-		"prefix": "obs.create",
+		"prefix": "Rx.Observable.create",
 		"description": "create(subscribe: function(subscriber: Subscriber): TeardownLogic): Observable\nCreates a new Observable that will execute the specified function when a Subscriber subscribes to it.",
 		"body": [
 			"Observable.create(subscriber => {",
@@ -56,6 +56,85 @@
 			"\tv => { console.log(${4:v}) },",
 			"\te => { console.log(${5:e}) },",
 			"\t() => { console.log('complete') }",
+			");"
+		]
+	},
+	"rxjs.Observable.empty": {
+		"prefix": "Rx.Observable.empty",
+		"description":"Creates an Observable that emits no items to the Observer and immediately emits a complete notification.",
+		"body": [
+			"Rx.Observable.empty().subscribe(",
+			"\tnull,",
+			"\tnull,",
+			"\t() => { console.log('Completed') }",
+			");"
+  	]
+	},
+	"rxjs.Observable.fromPromise": {
+		"prefix": "Rx.Observable.fromPromise",
+		"description":"Converts a Promises to an Observable sequence.",
+		"body": [
+			"Rx.Observable.fromPromise(fetch('someURI')).subscribe(",
+			"\t(resolve) => {",
+			"\t\tconsole.log('Resolve:',resolve)",
+			"\t}, ",
+			"\t(reject) => {",
+			"\t\tconsole.log('Reject:',reject)",
+			"\t},",
+			"\t() => {",
+			"\t\tconsole.log('Completed')",
+			"\t}",
+			");"	
+		]
+	},
+	"rxjs.Observable.interval": {
+		"prefix": "Rx.Observable.interval",
+		"description":"Returns an observable sequence that produces a value after each period.",
+		"body": [
+			"Rx.Observable.interval(period).subscribe(",
+			"\tv => {",
+			"\t\tconsole.log('Value', v)",
+			"\t},",
+			"\te => {",
+			"\t\tconsole.log('Error', e)",
+			"\t},",
+			"\t() => {",
+			"\t\tconsole.log('Completed')",
+			"\t}",
+			");"
+		]
+	},
+	"rxjs.Observable.range": {
+		"prefix": "Rx.Observable.range",
+		"description":"Generates an observable sequence of integral numbers within a specified range.",
+		"body": [
+			"Rx.Observable.range(start, count).subscribe(",
+			"\tv => {",
+			"\t\tconsole.log('Value', v)",
+			"\t},",
+			"\te => {",
+			"\t\tconsole.log('Error', e)",
+			"\t},",
+			"\t() => {",
+			"\t\tconsole.log('Completed')",
+			"\t}",
+			");"
+		]
+	},
+	"rxjs.Observable.timer": {
+		"prefix": "Rx.Observable.timer",
+		"description":"Returns an observable sequence that produces a value after dueTime has elapsed and then after each period.",
+		"body": [
+			"Rx.Observable.timer(dueTime, period).subscribe(",
+			"\tv => {",
+			"\t\tconsole.log('Value', v)",
+			"\t},",
+			"\te => {",
+			"\t\tconsole.log('Error', e)",
+			"\t},",
+			"\t() => {",
+			"\t\tconsole.log('Completed')",
+			"\t}",
 			");"
 		]
 	}

@@ -1,7 +1,7 @@
 # Change Log
-All notable changes to the "rxjs-snippets" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+- map, filter & subscribe added with arrow functions
+- added clearer descriptions 
+- prefix : obs
 
 ## [Unreleased]
-- Initial release

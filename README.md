@@ -2,16 +2,21 @@
 
 RxJS snippets for vscode
 
-- map, filter & subscribe added with arrow functions
+*prefix : Rx*
 
-- prefix : obs
+- map, filter & subscribe added with arrow functions
+- added clearer descriptions
 
 Snippets added so far:
 - - rxjs.Observable.from.map.filter
 - - rxjs.Observable.of
 - - rxjs.Observable.fromEvent
 - - rxjs.Observable.create
-
+- - rxjs.Observable.empty 
+- - rxjs.Observable.fromPromise
+- - rxjs.Observable.interval
+- - rxjs.Observable.range
+- - rxjs.Observable.timer
 
 ### For more information
 
