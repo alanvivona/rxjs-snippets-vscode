@@ -1,8 +1,8 @@
 {
     "name": "rxjssnippets",
-    "displayName": "rxjs snippets",
+    "displayName": "RxJS Snippets",
     "description": "RxJS snippets for vscode",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "publisher": "alan-vivona",
     "icon": "images/rxjs_icon.png",
     "license": "SEE LICENSE IN LICENSE.md",
